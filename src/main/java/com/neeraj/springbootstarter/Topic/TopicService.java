@@ -28,4 +28,18 @@ public class TopicService {
 		return topic;
 	}
 
+	public Topic updateTopic(String id, Topic topic) {
+		for(int i = 0; i < topics.size(); i++) {
+			if(topics.get(i).getId().equals(id)) {
+				topics.set(i, topic);
+				break;
+			}
+		}
+		return topic;
+	}
+
+	public void deleteTopic(String id) {
+		topics.removeIf(t -> t.getId().equals(id));
+	}
+
 }
