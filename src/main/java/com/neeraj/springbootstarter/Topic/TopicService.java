@@ -19,9 +19,19 @@ public class TopicService {
 	}
 	
 	public Topic addTopic(Topic topic) {
-		topicRepository.save(topic);
-		return topic;
+		return topicRepository.save(topic);
 	}
 	
+	public Topic getTopic(String id) {
+		return topicRepository.findById(id).get();
+	}
+	
+	public Topic updateTopic(String id, Topic topic) {
+		return topicRepository.save(topic);
+	}
+	
+	public void deleteTopic(String id) {
+		topicRepository.deleteById(id);
+	}
 
 }

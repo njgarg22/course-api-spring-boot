@@ -6,6 +6,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+/**
+ * Using `TopicService.java`, not this one.
+ */
 @Service
 public class TopicServiceWithoutDB {
 	
