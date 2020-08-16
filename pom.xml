@@ -5,7 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <!-- Maven users can inherit from the `spring-boot-starter-parent` project to obtain sensible defaults. 
-  The parent project provides a Dependency Management section, allowing you to omit <version> tags for common dependencies.-->
+  The parent project provides a Dependency Management section, allowing you to omit <version> tags for common dependencies.
+-->
   <parent>
   		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -19,7 +20,9 @@
   <dependencies>
   
   	<!--  `spring-boot-starter-parent` provides no dependencies by itself. It just provides default version numbers.
-  	Since we are developing a web application, add the `spring-boot-starter-web` dependency -->
+  	Since we are developing a web application, add the `spring-boot-starter-web` dependency 
+	It's a starter project for building web, including RESTful, applications using Spring MVC. 
+	Uses Tomcat as the default embedded container -->
   	<dependency>
   		<groupId>org.springframework.boot</groupId>
   		<artifactId>spring-boot-starter-web</artifactId>
